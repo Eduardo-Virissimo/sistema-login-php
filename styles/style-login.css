@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #53d1f8, #54e6af, #fcff6c, #ff6ec4);
+  background-size: 600% 600%;
+  animation: gradientAnimation 20s ease infinite;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: none;
+}
+
+.tela-login h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.tela-login {
+  margin: 20px;
+  font-size: 16px;
+  background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, .2);
+  padding: 30px 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  backdrop-filter: blur(20px);
+  width: 400px;
+  height: 100%;
+
+}
+
+.tela-login input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+.tela-login button {
+  background-color: dodgerblue;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.tela-login button:hover {
+  background-color: deepskyblue;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  25% {
+      background-position: 50% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  75% {
+      background-position: 50% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
